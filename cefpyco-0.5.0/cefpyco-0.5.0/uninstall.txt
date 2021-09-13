@@ -1,0 +1,13 @@
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/EGG-INFO/PKG-INFO
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/EGG-INFO/SOURCES.txt
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/EGG-INFO/dependency_links.txt
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/EGG-INFO/native_libs.txt
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/EGG-INFO/not-zip-safe
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/EGG-INFO/top_level.txt
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/__pycache__/libcefpyco.cpython-38.pyc
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/cefpyco/__init__.py
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/cefpyco/__pycache__/__init__.cpython-38.pyc
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/cefpyco/__pycache__/core.cpython-38.pyc
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/cefpyco/core.py
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/libcefpyco.cpython-38-x86_64-linux-gnu.so
+/usr/local/lib/python3.8/dist-packages/cefpyco-0.4.2-py3.8-linux-x86_64.egg/libcefpyco.py

@@ -1,0 +1,7 @@
+/home/nuc1/cefpyco-0.5.0/cefpyco-0.5.0/CMakeFiles/install/strip.dir
+/home/nuc1/cefpyco-0.5.0/cefpyco-0.5.0/CMakeFiles/install/local.dir
+/home/nuc1/cefpyco-0.5.0/cefpyco-0.5.0/CMakeFiles/install.dir
+/home/nuc1/cefpyco-0.5.0/cefpyco-0.5.0/CMakeFiles/list_install_components.dir
+/home/nuc1/cefpyco-0.5.0/cefpyco-0.5.0/CMakeFiles/rebuild_cache.dir
+/home/nuc1/cefpyco-0.5.0/cefpyco-0.5.0/CMakeFiles/edit_cache.dir
+/home/nuc1/cefpyco-0.5.0/cefpyco-0.5.0/CMakeFiles/uninstall.dir
