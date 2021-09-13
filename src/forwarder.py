@@ -224,7 +224,7 @@ def fib_update(interface_name):
 
     #FIB作成用にファイル操作の開始 
     f = open('fibadd.sh','w')
-    path_sh = os.path.join(script_path, '../fibadd.sh')
+    path_sh = os.path.join(script_path, '../tools/fibadd.sh')
     print(neighbor_list)
     for nodename, addr in neighbor_list.items(): #リンクダウンしたと思われるネイバーはリスト破棄
         if addr[1] == "":
@@ -305,7 +305,7 @@ def Interrupt():
     subprocess.run(['pkill','-KILL','-f','/usr/local/sbin/wpa'])
     subprocess.run(['ip','link','set','wlx18ece77d737f','down'])
     if 'p2p0' in interface_list: subprocess.run(['iw','dev','p2p0','del'])
-    path_sh = os.path.join(script_path, '../cefore-0.8.2.2/finish.sh')
+    path_sh = os.path.join(script_path, '../tools/finish.sh')
     subprocess.run(['sh',path_sh])
     os._exit(0) 
     
@@ -452,23 +452,6 @@ def link_layer_administration(): #10秒usr/local/sbin/wpaごとに、ICMPv6 Echo
             neighbor_list_update(proc)
             fib_update(iface)
         sleep(10)  
-    #     p1 = subprocess.Popen(["/usr/local/sbin/wpa_cli",'-i'+ interface_name,"status"], stdout=subprocess.PIPE)
-    #     p2 = subprocess.Popen(['grep','mode'],stdin=p1.stdout, stdout=subprocess.PIPE)
-    #     p1.stdout.close()
-    #     output = str(p2.communicate()[0])
-    #     if  output != "b''":
-    #         if output.split('=')[1].split("\\n")[0] != "station":
-    #             #GOの時の処理 (ip付与とdhcpサーバを起動)
-    #             print("I am GO\n")
-    #             subprocess.run(['ip','addr','add','192.168.5.5/24','dev',interface_name])
-    #             subprocess.run(['systemctl','restart','isc-dhcp-server'])
-    #             GO = True
-    #         else:
-    #             #Clientの時の処理
-    #             sleep(1)
-    #             print("I am Client\n")
-    #             subprocess.run(['dhclient',interface_name])
-    #         break
 
 if __name__ == '__main__':
     name_list = []  #名前読み込みに用いるメンバリスト
@@ -483,7 +466,7 @@ if __name__ == '__main__':
     
 
     #初期化ファイル(メンバ)の読み込み
-    with open('cefore-0.8.2.2/init.txt','r') as f:
+    with open('../tools/init.txt','r') as f:
         for row in f:
             row = row.strip('\n')
             name_list.append(row)
@@ -496,7 +479,7 @@ if __name__ == '__main__':
     print("My Name is : " + "Forwarder" + '\n')
     #cefore起動シェルスクリプト実行    
     script_path = os.path.dirname(os.path.abspath(__file__))
-    path_sh = os.path.join(script_path, '../cefore-0.8.2.2/start.sh')
+    path_sh = os.path.join(script_path, '../tools/start.sh')
     subprocess.run(['sh',path_sh])
     #メンバリストの設定/再送タイマの設定
     for membername in name_list:
